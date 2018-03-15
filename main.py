@@ -1,4 +1,15 @@
-import sys
+from database import Database
+
+EXIT = "exit"
+PROMPT = ">"
+
+db = Database()
+
 while True:
-    strings = sys.stdin.readline()
-    print(repr(strings))
+    line = input(PROMPT)
+    if line == EXIT:
+        break
+    if not line == "":
+        result = db.transact(line)
+        if len(result) > 0:
+            print(result)
