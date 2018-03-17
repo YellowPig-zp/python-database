@@ -12,8 +12,12 @@ class Parser:
     INSERT_CMD = re.compile("insert into " + REST)
     PRINT_CMD = re.compile("print " + REST)
     SELECT_CMD = re.compile("select " + REST)
-    def __init__(self):
+
+    def parse(self, query, database):
         pass
-    def
+
+    def eval(self, query, database):
+        pass
+
 
 
