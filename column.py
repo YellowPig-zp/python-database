@@ -7,3 +7,5 @@ class Column:
 
     def join_column(self, col1, col2):
         pass
+
+
